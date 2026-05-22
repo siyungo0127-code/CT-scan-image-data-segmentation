@@ -6,11 +6,11 @@ train/
     images/
     masks/
 
-val/
+test/
     images/
     masks/
 
-test/
+validation/
     images/
     masks/
 
