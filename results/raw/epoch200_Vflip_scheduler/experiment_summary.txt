@@ -1,0 +1,30 @@
+Experiment name: epoch200_Vflip_scheduler
+Random seed: 42
+Image size: 256
+Batch size: 8
+Maximum epochs: 200
+Initial learning rate: 0.001
+Scheduler: enabled
+Scheduler type: ReduceLROnPlateau
+Scheduler monitor: validation tumor Dice
+Scheduler mode: max
+Scheduler factor: 0.5
+Scheduler patience: 10
+Scheduler threshold: 0.001
+Scheduler threshold mode: abs
+Scheduler cooldown: 0
+Scheduler minimum learning rate: 0.000001
+Final learning rate: 1e-06
+Number of learning-rate reductions: 10
+Learning-rate reduction epochs: 35, 46, 57, 68, 79, 90, 101, 112, 123, 134
+Learning-rate reduction events: Epoch 35: 0.001 -> 0.0005, monitored validation tumor Dice = 0.669526112; Epoch 46: 0.0005 -> 0.00025, monitored validation tumor Dice = 0.6195903976; Epoch 57: 0.00025 -> 0.000125, monitored validation tumor Dice = 0.5962367723; Epoch 68: 0.000125 -> 6.25e-05, monitored validation tumor Dice = 0.6487360107; Epoch 79: 6.25e-05 -> 3.125e-05, monitored validation tumor Dice = 0.6427113983; Epoch 90: 3.125e-05 -> 1.5625e-05, monitored validation tumor Dice = 0.6556207478; Epoch 101: 1.5625e-05 -> 7.8125e-06, monitored validation tumor Dice = 0.6420775185; Epoch 112: 7.8125e-06 -> 3.90625e-06, monitored validation tumor Dice = 0.6477374296; Epoch 123: 3.90625e-06 -> 1.953125e-06, monitored validation tumor Dice = 0.6346874575; Epoch 134: 1.953125e-06 -> 1e-06, monitored validation tumor Dice = 0.6476111089
+Augmentation: 50% vertical flip on training image-mask pairs
+Best epoch: 24
+Best validation tumor Dice: 0.7003850449866101
+Checkpoint path: experiment_results/epoch200_Vflip_scheduler/checkpoints/best_model.pth
+Test loss: 0.5574564499019878
+Test liver Dice: 0.7795984271971403
+Test tumor Dice: 0.6123695412980881
+Test liver IoU: 0.7006468725729776
+Test tumor IoU: 0.5553916989365224
+Total training time (minutes): 339.3833366394043

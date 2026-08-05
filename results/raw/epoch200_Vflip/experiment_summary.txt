@@ -1,0 +1,16 @@
+Experiment name: epoch200_Vflip
+Random seed: 42
+Image size: 256
+Batch size: 8
+Maximum epochs: 200
+Learning rate: 0.001
+Augmentation: 50% vertical flip on training image-mask pairs
+Best epoch: 11
+Best validation tumor Dice: 0.7155526025683207
+Checkpoint path: experiment_results/epoch200_Vflip/checkpoints/best_model.pth
+Test loss: 0.5961989616553347
+Test liver Dice: 0.7474548372127754
+Test tumor Dice: 0.6218824795744493
+Test liver IoU: 0.6720451272590355
+Test tumor IoU: 0.5693048517483426
+Total training time (minutes): 481.4764590620995

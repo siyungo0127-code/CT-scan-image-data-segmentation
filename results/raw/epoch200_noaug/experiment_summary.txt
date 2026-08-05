@@ -1,0 +1,16 @@
+Experiment name: epoch200_noaug
+Random seed: 42
+Image size: 256
+Batch size: 8
+Maximum epochs: 200
+Learning rate: 0.001
+Augmentation: none
+Best epoch: 53
+Best validation tumor Dice: 0.6890153239978479
+Checkpoint path: experiment_results/epoch200_noaug/checkpoints/best_model.pth
+Test loss: 0.6041507000377832
+Test liver Dice: 0.7873478721326364
+Test tumor Dice: 0.5933802523688997
+Test liver IoU: 0.706555743717662
+Test tumor IoU: 0.5398534790512496
+Total training time (minutes): 364.20243582328163

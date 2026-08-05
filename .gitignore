@@ -1,0 +1,43 @@
+# Medical data and derived patient-level artefacts
+liver_dataset/
+data/
+datasets/
+images/
+masks/
+predictions/
+gradcam/
+
+# Model artefacts
+*.pth
+*.pt
+*.ckpt
+
+# Notebooks and transient outputs
+*.ipynb
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Dissertation and archives
+*.doc
+*.docx
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Environments, secrets and local tooling
+.env
+.env.*
+venv/
+.venv/
+env/
+.idea/
+.vscode/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,26 @@
+Experiment name: epoch200_Vflip_earlystop
+Random seed: 42
+Image size: 256
+Batch size: 8
+Maximum epochs: 200
+Early stopping: enabled
+Early stopping monitor: validation tumor Dice
+Early stopping mode: maximize
+Early stopping patience: 20
+Early stopping minimum improvement: 0.0
+Early stopping improvement rule: strict >
+Early stopping triggered: True
+Actual stopping epoch: 32
+Total epochs completed: 32
+Training end epoch: 32
+Learning rate: 0.001
+Augmentation: 50% vertical flip on training image-mask pairs
+Best epoch: 12
+Best validation tumor Dice: 0.6936229439098776
+Checkpoint path: experiment_results/epoch200_Vflip_earlystop/checkpoints/best_model.pth
+Test loss: 0.5763697259762114
+Test liver Dice: 0.7680196966700915
+Test tumor Dice: 0.5871738516961931
+Test liver IoU: 0.6881056722027649
+Test tumor IoU: 0.5346448220673088
+Total training time (minutes): 52.93093883593877
