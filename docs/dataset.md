@@ -14,18 +14,17 @@ The dissertation records describe:
 
 - contrast-enhanced abdominal CT;
 - arterial-phase hepatocellular carcinoma data;
+- a working cohort of 94 HCC patients and 10,808 axial slices;
+- a patient-level training/validation/test split of 65/10/19 patients;
 - 2D axial PNG slices prepared from volumetric imaging;
 - original slice dimensions of 512 × 512 pixels;
 - training inputs resized to 256 × 256 pixels; and
 - three segmentation classes: background, liver and tumour.
 
-## Unresolved cohort-size discrepancy
+## Cohort and split
 
-The available project records are inconsistent: one record describes 92 patients, whereas notebook documentation describes 94 patients. The authoritative experiment summaries do not state a patient count. This repository therefore does not select either value as definitive.
-
-The discrepancy should be resolved against the original split manifest or dissertation methods record before a cohort count is quoted publicly. Likewise, the size of the complete source dataset must not be presented as the number of images used for model training.
+The final dissertation record establishes a working cohort of 94 patients and 10,808 slices. Patients, rather than individual slices, were assigned to the training (65), validation (10) and independent test (19) partitions. The split manifest is not published because it contains patient-level identifiers. The size of the complete source dataset must not be presented as the number of images used for model training.
 
 ## Data governance
 
 No CT image, mask, patient-style filename or per-slice prediction is included. This omission protects participant privacy and avoids making unsupported redistribution claims. The public repository contains aggregate experimental metrics and non-patient plots only.
-

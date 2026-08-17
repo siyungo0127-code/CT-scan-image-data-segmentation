@@ -2,7 +2,7 @@
 
 ## What is available
 
-For each of the six verified experiments, the repository provides:
+Seven final configurations were evaluated in the dissertation. For each of the six final configurations with complete records in this Git checkout, the repository provides:
 
 - the original experiment summary;
 - the per-epoch training history;
@@ -10,7 +10,7 @@ For each of the six verified experiments, the repository provides:
 - a training-loss plot; and
 - a validation-Dice plot.
 
-The consolidated table in `results/experiment_comparison.csv` was transcribed from those records using the precedence: experiment summary, training history, then test results. Cross-checking found no numerical disagreement among these sources.
+The consolidated table in `results/experiment_comparison.csv` was transcribed from those records using the precedence: experiment summary, training history, then test results. The preliminary 10-epoch HV-flip run is excluded. Cross-checking found no numerical disagreement among the included source files.
 
 ## Evidenced software dependencies
 
@@ -47,5 +47,4 @@ For each experiment:
 3. Compare those values with `experiment_summary.txt`.
 4. Compare all reported test values with `test_results.csv`.
 
-The current public records pass these checks.
-
+The current public records pass these checks. The final 200-epoch HV-flip records are not yet present in this Git checkout.

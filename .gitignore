@@ -6,17 +6,57 @@ images/
 masks/
 predictions/
 gradcam/
+raw_data/
+processed_data/
+
+# Common patient-split layouts (keep these anchored to the repository root)
+/train/images/
+/train/masks/
+/training/images/
+/training/masks/
+/val/images/
+/val/masks/
+/validation/images/
+/validation/masks/
+/test/images/
+/test/masks/
+
+# Medical-imaging formats
+*.dcm
+*.nii
+*.nii.gz
+*.mha
+*.mhd
+*.nrrd
 
 # Model artefacts
 *.pth
 *.pt
 *.ckpt
+checkpoints/
+**/checkpoints/
+
+# Large generated experiment artefacts (concise files under results/ remain tracked)
+experiment_results/**/predictions/
+experiment_results/**/prediction*/
+experiment_results/**/checkpoints/
+outputs/
+runs/
+wandb/
 
 # Notebooks and transient outputs
 *.ipynb
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]
+*.tmp
+*.temp
+*.swp
+*.bak
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Dissertation and archives
 *.doc
@@ -33,6 +73,7 @@ __pycache__/
 venv/
 .venv/
 env/
+.conda/
 .idea/
 .vscode/
 
@@ -40,4 +81,3 @@ env/
 *.log
 .DS_Store
 Thumbs.db
-

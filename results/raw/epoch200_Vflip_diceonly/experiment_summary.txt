@@ -1,0 +1,21 @@
+Experiment name: epoch200_Vflip_diceonly
+Random seed: 42
+Image size: 256
+Batch size: 8
+Maximum epochs: 200
+Learning rate: 0.001
+Augmentation: 50% vertical flip on training image-mask pairs
+Loss function: Dice Loss only
+Dice classes: liver and tumour
+Background excluded from Dice loss: True
+Cross-Entropy included: False
+Dice smoothing constant: 0.000001
+Best epoch: 27
+Best validation tumor Dice: 0.7340279942402174
+Checkpoint path: experiment_results/epoch200_Vflip_diceonly/checkpoints/best_model.pth
+Test loss: 0.4227713863359062
+Test liver Dice: 0.7778048973068465
+Test tumor Dice: 0.5958542883588187
+Test liver IoU: 0.7019513197204934
+Test tumor IoU: 0.5421436825304674
+Total training time (minutes): 289.13288832505543
